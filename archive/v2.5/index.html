@@ -391,12 +391,12 @@ dialog p { color: var(--ink-2); font-size: 14px; line-height: 1.6; }
       goal programming): a lower-priority objective can never trade away a higher one. Everything is a
       linear program, solved in your browser in milliseconds &mdash; there is no goal-seeking and no hidden
       target schedule. If your constraints are jointly impossible, the tool says so and suggests what to relax.</p>
-      <p>This tool and the accompanying working paper now share one set of inputs: the published statutory
-      2026 amounts, including the official grandfathered (pre-JRG) rates that set several of the fee caps.
-      Examples B and C reproduce the paper&rsquo;s figures exactly. Example A is the one deliberate difference:
-      the paper&rsquo;s version adds a fee target for the broad science category, which this tool omits because
-      it contains no target schedules of any kind, so its largest increase is $3,443 here against $3,676 in
-      the paper.</p>
+      <p>The example scenarios approximate the worked examples in the accompanying working paper, with two
+      calibration differences. The paper&rsquo;s Example A includes an additional target for the broad science
+      category, and the paper indexes the 2021 schedule by a single factor where this tool uses the exact
+      statutory 2026 rates &mdash; including the official grandfathered (pre-JRG) rates, which set the mid-band
+      fee caps slightly higher. Example A&rsquo;s largest increase is therefore smaller here, and Examples B
+      and C sit within a dollar or two of the paper&rsquo;s figures.</p>
     </div>
   </details>
 
@@ -419,7 +419,7 @@ dialog p { color: var(--ink-2); font-size: 14px; line-height: 1.6; }
 <footer class="site-footer">
   <div class="inner">
     <div>&copy; 2026 Max Yong</div>
-    <div>Version 2.6 (July 2026)</div>
+    <div>Version 2.5 (July 2026)</div>
   </div>
 </footer>
 <div id="tooltip"></div>
@@ -458,325 +458,325 @@ window.solver = typeof solver !== 'undefined' ? solver : window.solver;</script>
   "name": "Maths & Statistics",
   "fullName": "Mathematics and Statistics",
   "q": 3174.5303,
-  "S0": 4738.0000,
-  "G0": 15898.0000,
-  "U0": 20636.0000,
+  "S0": 4738.0,
+  "G0": 15898.0,
+  "U0": 20636.0,
   "Spre": 11635.8096,
-  "paperCap": 14900.0000,
+  "paperCap": 14900.0,
   "protectedDefault": false,
-  "jrgRevPct": -0.16963793
+  "jrgRevPct": -0.15470808
  },
  {
   "id": 2,
   "name": "Natural & Physical Sciences",
   "fullName": "Natural and Physical Sciences",
   "q": 10661.0447,
-  "S0": 9537.0000,
-  "G0": 19497.0000,
-  "U0": 29034.0000,
+  "S0": 9537.0,
+  "G0": 19497.0,
+  "U0": 29034.0,
   "Spre": 11635.8096,
   "paperCap": 11635.8096,
   "protectedDefault": false,
-  "jrgRevPct": -0.16435262
+  "jrgRevPct": -0.14929518
  },
  {
   "id": 3,
   "name": "Medical Science",
   "fullName": "Medical Science",
-  "q": 5387.3950,
-  "S0": 9537.0000,
-  "G0": 19497.0000,
-  "U0": 29034.0000,
-  "Spre": 13624.0000,
-  "paperCap": 14900.0000,
+  "q": 5387.395,
+  "S0": 9537.0,
+  "G0": 19497.0,
+  "U0": 29034.0,
+  "Spre": 13624.0,
+  "paperCap": 14900.0,
   "protectedDefault": false,
-  "jrgRevPct": -0.32407108
+  "jrgRevPct": -0.311894
  },
  {
   "id": 4,
   "name": "Information Technology",
   "fullName": "Information Technology",
-  "q": 12403.0000,
-  "S0": 9537.0000,
-  "G0": 15898.0000,
-  "U0": 25435.0000,
+  "q": 12403.0,
+  "S0": 9537.0,
+  "G0": 15898.0,
+  "U0": 25435.0,
   "Spre": 11635.8096,
   "paperCap": 11635.8096,
   "protectedDefault": false,
-  "jrgRevPct": 0.02346672
+  "jrgRevPct": 0.04187144
  },
  {
   "id": 5,
   "name": "Engineering",
   "fullName": "Engineering",
-  "q": 17230.0000,
-  "S0": 9537.0000,
-  "G0": 19497.0000,
-  "U0": 29034.0000,
+  "q": 17230.0,
+  "S0": 9537.0,
+  "G0": 19497.0,
+  "U0": 29034.0,
   "Spre": 11635.8096,
   "paperCap": 11635.8096,
   "protectedDefault": false,
-  "jrgRevPct": -0.16435262
+  "jrgRevPct": -0.14929518
  },
  {
   "id": 6,
   "name": "Architecture and Building",
   "fullName": "Architecture and Building",
-  "q": 7626.0000,
-  "S0": 9537.0000,
-  "G0": 15898.0000,
-  "U0": 25435.0000,
+  "q": 7626.0,
+  "S0": 9537.0,
+  "G0": 15898.0,
+  "U0": 25435.0,
   "Spre": 11635.8096,
   "paperCap": 11635.8096,
   "protectedDefault": false,
-  "jrgRevPct": 0.02346672
+  "jrgRevPct": 0.04187144
  },
  {
   "id": 7,
   "name": "Agriculture",
   "fullName": "Agriculture",
   "q": 509.4333,
-  "S0": 4738.0000,
-  "G0": 32400.0000,
-  "U0": 37138.0000,
+  "S0": 4738.0,
+  "G0": 32400.0,
+  "U0": 37138.0,
   "Spre": 11635.8096,
-  "paperCap": 14900.0000,
+  "paperCap": 14900.0,
   "protectedDefault": false,
-  "jrgRevPct": -0.09344401
+  "jrgRevPct": -0.07724874
  },
  {
   "id": 8,
   "name": "Environmental Studies",
   "fullName": "Environmental Studies",
   "q": 2187.5667,
-  "S0": 9537.0000,
-  "G0": 19497.0000,
-  "U0": 29034.0000,
+  "S0": 9537.0,
+  "G0": 19497.0,
+  "U0": 29034.0,
   "Spre": 11635.8096,
   "paperCap": 11635.8096,
   "protectedDefault": false,
-  "jrgRevPct": -0.29126645
+  "jrgRevPct": -0.27849498
  },
  {
   "id": 9,
   "name": "Medicine / Dentistry / Vet",
   "fullName": "Medicine, Dentistry, Veterinary",
   "q": 6633.8402,
-  "S0": 13558.0000,
-  "G0": 32400.0000,
-  "U0": 45958.0000,
-  "Spre": 13624.0000,
-  "paperCap": 14235.9000,
+  "S0": 13558.0,
+  "G0": 32400.0,
+  "U0": 45958.0,
+  "Spre": 13624.0,
+  "paperCap": 14235.9,
   "protectedDefault": false,
-  "jrgRevPct": 0.06992979
+  "jrgRevPct": 0.08902727
  },
  {
   "id": 10,
   "name": "Nursing",
   "fullName": "Nursing",
   "q": 20784.1344,
-  "S0": 4738.0000,
-  "G0": 19497.0000,
-  "U0": 24235.0000,
-  "Spre": 8164.0000,
-  "paperCap": 4738.0000,
+  "S0": 4738.0,
+  "G0": 19497.0,
+  "U0": 24235.0,
+  "Spre": 8164.0,
+  "paperCap": 4738.0,
   "protectedDefault": true,
-  "jrgRevPct": -0.07891163
+  "jrgRevPct": -0.06229691
  },
  {
   "id": 11,
   "name": "Pharmacy / Allied Health",
   "fullName": "Pharmacy, Optometry, Allied Health",
   "q": 17225.2073,
-  "S0": 9537.0000,
-  "G0": 15898.0000,
-  "U0": 25435.0000,
+  "S0": 9537.0,
+  "G0": 15898.0,
+  "U0": 25435.0,
   "Spre": 11635.8096,
   "paperCap": 11635.8096,
   "protectedDefault": false,
-  "jrgRevPct": -0.08801816
+  "jrgRevPct": -0.07160061
  },
  {
   "id": 12,
   "name": "Public Health",
   "fullName": "Public Health",
   "q": 3800.9342,
-  "S0": 9537.0000,
-  "G0": 15898.0000,
-  "U0": 25435.0000,
+  "S0": 9537.0,
+  "G0": 15898.0,
+  "U0": 25435.0,
   "Spre": 11635.8096,
   "paperCap": 11635.8096,
   "protectedDefault": false,
-  "jrgRevPct": 0.02346672
+  "jrgRevPct": 0.04187144
  },
  {
   "id": 13,
   "name": "Human Movement",
   "fullName": "Human Movement",
   "q": 3032.2059,
-  "S0": 17399.0000,
-  "G0": 1316.0000,
-  "U0": 18715.0000,
-  "Spre": 8164.0000,
-  "paperCap": 14700.0000,
+  "S0": 17399.0,
+  "G0": 1316.0,
+  "U0": 18715.0,
+  "Spre": 8164.0,
+  "paperCap": 14700.0,
   "protectedDefault": false,
-  "jrgRevPct": -0.12464920
+  "jrgRevPct": -0.10882605
  },
  {
   "id": 14,
   "name": "Teaching",
   "fullName": "Teaching",
-  "q": 20532.0000,
-  "S0": 4738.0000,
-  "G0": 15898.0000,
-  "U0": 20636.0000,
-  "Spre": 8164.0000,
-  "paperCap": 4738.0000,
+  "q": 20532.0,
+  "S0": 4738.0,
+  "G0": 15898.0,
+  "U0": 20636.0,
+  "Spre": 8164.0,
+  "paperCap": 4738.0,
   "protectedDefault": true,
-  "jrgRevPct": -0.05841605
+  "jrgRevPct": -0.04146233
  },
  {
   "id": 15,
   "name": "Business",
   "fullName": "Business",
-  "q": 31707.0000,
-  "S0": 17399.0000,
-  "G0": 1316.0000,
-  "U0": 18715.0000,
-  "Spre": 13624.0000,
-  "paperCap": 14900.0000,
+  "q": 31707.0,
+  "S0": 17399.0,
+  "G0": 1316.0,
+  "U0": 18715.0,
+  "Spre": 13624.0,
+  "paperCap": 14900.0,
   "protectedDefault": false,
-  "jrgRevPct": 0.14773703
+  "jrgRevPct": 0.16827679
  },
  {
   "id": 16,
   "name": "Politics / Sociology",
   "fullName": "Politics, Sociology, Curatorial",
   "q": 16027.0375,
-  "S0": 17399.0000,
-  "G0": 1316.0000,
-  "U0": 18715.0000,
-  "Spre": 8164.0000,
-  "paperCap": 13900.0000,
+  "S0": 17399.0,
+  "G0": 1316.0,
+  "U0": 18715.0,
+  "Spre": 8164.0,
+  "paperCap": 13900.0,
   "protectedDefault": false,
-  "jrgRevPct": -0.12464920
+  "jrgRevPct": -0.10882605
  },
  {
   "id": 17,
   "name": "Social Work",
   "fullName": "Social Work",
   "q": 3939.9316,
-  "S0": 9537.0000,
-  "G0": 15898.0000,
-  "U0": 25435.0000,
-  "Spre": 8164.0000,
-  "paperCap": 9537.0000,
+  "S0": 9537.0,
+  "G0": 15898.0,
+  "U0": 25435.0,
+  "Spre": 8164.0,
+  "paperCap": 9537.0,
   "protectedDefault": true,
-  "jrgRevPct": 0.18966324
+  "jrgRevPct": 0.21108255
  },
  {
   "id": 18,
   "name": "Psychology",
   "fullName": "Psychology, Professional Pathway",
   "q": 11145.7063,
-  "S0": 9537.0000,
-  "G0": 15898.0000,
-  "U0": 25435.0000,
-  "Spre": 8164.0000,
-  "paperCap": 9537.0000,
+  "S0": 9537.0,
+  "G0": 15898.0,
+  "U0": 25435.0,
+  "Spre": 8164.0,
+  "paperCap": 9537.0,
   "protectedDefault": true,
-  "jrgRevPct": 0.04164960
+  "jrgRevPct": 0.06042417
  },
  {
   "id": 19,
   "name": "Law and Economics",
   "fullName": "Law and Economics",
   "q": 11064.3507,
-  "S0": 17399.0000,
-  "G0": 1316.0000,
-  "U0": 18715.0000,
-  "Spre": 13624.0000,
-  "paperCap": 14900.0000,
+  "S0": 17399.0,
+  "G0": 1316.0,
+  "U0": 18715.0,
+  "Spre": 13624.0,
+  "paperCap": 14900.0,
   "protectedDefault": false,
-  "jrgRevPct": 0.14773703
+  "jrgRevPct": 0.16827679
  },
  {
   "id": 20,
   "name": "Languages & Literature",
   "fullName": "Languages and Literature",
   "q": 395.1554,
-  "S0": 4738.0000,
-  "G0": 15898.0000,
-  "U0": 20636.0000,
-  "Spre": 8164.0000,
-  "paperCap": 14900.0000,
+  "S0": 4738.0,
+  "G0": 15898.0,
+  "U0": 20636.0,
+  "Spre": 8164.0,
+  "paperCap": 14900.0,
   "protectedDefault": false,
-  "jrgRevPct": 0.31994371
+  "jrgRevPct": 0.34375
  },
  {
   "id": 21,
   "name": "History / Philosophy / Legal",
   "fullName": "History, Philosophy, Legal Studies",
   "q": 755.4441,
-  "S0": 17399.0000,
-  "G0": 1316.0000,
-  "U0": 18715.0000,
-  "Spre": 8164.0000,
-  "paperCap": 13900.0000,
+  "S0": 17399.0,
+  "G0": 1316.0,
+  "U0": 18715.0,
+  "Spre": 8164.0,
+  "paperCap": 13900.0,
   "protectedDefault": false,
-  "jrgRevPct": 0.19707049
+  "jrgRevPct": 0.21875
  },
  {
   "id": 22,
   "name": "Creative Arts",
   "fullName": "Creative Arts",
   "q": 8066.9458,
-  "S0": 9537.0000,
-  "G0": 15898.0000,
-  "U0": 25435.0000,
-  "Spre": 8164.0000,
-  "paperCap": 9537.0000,
+  "S0": 9537.0,
+  "G0": 15898.0,
+  "U0": 25435.0,
+  "Spre": 8164.0,
+  "paperCap": 9537.0,
   "protectedDefault": true,
-  "jrgRevPct": 0.04164960
+  "jrgRevPct": 0.06042417
  },
  {
   "id": 23,
   "name": "Communications / Media",
   "fullName": "Communications, Journalism, Media",
   "q": 8305.1226,
-  "S0": 17399.0000,
-  "G0": 1316.0000,
-  "U0": 18715.0000,
-  "Spre": 8164.0000,
-  "paperCap": 13900.0000,
+  "S0": 17399.0,
+  "G0": 1316.0,
+  "U0": 18715.0,
+  "Spre": 8164.0,
+  "paperCap": 13900.0,
   "protectedDefault": false,
-  "jrgRevPct": -0.23355721
+  "jrgRevPct": -0.21968788
  },
  {
   "id": 24,
   "name": "Science (broad)",
   "fullName": "Science (broad)",
   "q": 4860.0301,
-  "S0": 9051.1012,
+  "S0": 9051.1013,
   "G0": 19132.3013,
   "U0": 28183.4026,
-  "Spre": 12353.9029,
-  "paperCap": 12353.9029,
+  "Spre": 12353.9013,
+  "paperCap": 12353.9013,
   "protectedDefault": false,
-  "jrgRevPct": -0.23218077
+  "jrgRevPct": -0.21834759
  },
  {
   "id": 25,
   "name": "Health (broad)",
   "fullName": "Health (broad)",
   "q": 1067.6781,
-  "S0": 8391.2388,
+  "S0": 8391.2387,
   "G0": 18758.0053,
-  "U0": 27149.2441,
-  "Spre": 10083.6921,
-  "paperCap": 10083.6921,
+  "U0": 27149.244,
+  "Spre": 10083.4216,
+  "paperCap": 10083.4216,
   "protectedDefault": false,
-  "jrgRevPct": -0.05035455
+  "jrgRevPct": -0.03323792
  },
  {
   "id": 26,
@@ -786,10 +786,10 @@ window.solver = typeof solver !== 'undefined' ? solver : window.solver;</script>
   "S0": 14104.1422,
   "G0": 6909.9672,
   "U0": 21014.1094,
-  "Spre": 10009.2002,
-  "paperCap": 13900.0000,
+  "Spre": 10008.9196,
+  "paperCap": 13900.0,
   "protectedDefault": false,
-  "jrgRevPct": 0.11274881
+  "jrgRevPct": 0.13284181
  },
  {
   "id": 27,
@@ -798,11 +798,11 @@ window.solver = typeof solver !== 'undefined' ? solver : window.solver;</script>
   "q": 434.9316,
   "S0": 13428.3678,
   "G0": 8681.4102,
-  "U0": 22109.7780,
-  "Spre": 8164.0000,
-  "paperCap": 13900.0000,
+  "U0": 22109.778,
+  "Spre": 8164.0,
+  "paperCap": 13900.0,
   "protectedDefault": false,
-  "jrgRevPct": -0.09452953
+  "jrgRevPct": -0.07818127
  }
 ];
 </script>

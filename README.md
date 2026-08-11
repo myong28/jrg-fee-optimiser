@@ -20,7 +20,7 @@ It is a single static file. Open `index.html` in a browser, or host it anywhere
 
 ## Versioning
 
-The live page is v2.5 (July 2026): v2's interface restyled to match the design
+The live page is v2.6 (July 2026): v2's interface restyled to match the design
 system of the author's personal site (maxyong.au) — Inter, Classic Blue light /
 Midnight dark themes, shared design tokens. v2 (July 2026) introduced scenario
 cards with saveable custom scenarios (stored in the browser), grouped constraint
@@ -44,11 +44,11 @@ list, and EFTSL bars. Superseded versions are kept unmodified under `archive/`
   grandfathered pre-JRG rates. Blended broad categories are re-weighted to those rates.
 - **Validation**: `validation/web_expectations.R` solves the three preset configurations
   with R's `lpSolve` on the site's exact inputs (`validation/site_inputs_2026_statutory.csv`)
-  and writes `web_expected.json`; the browser solver matches every headline metric. Preset A
-  reports a smaller largest-increase ($3,443) than the paper's Example A ($5,237): the paper
-  adds a broad-science fee target and indexes the 2021 schedule by a single factor, which
-  understates the pre-JRG caps slightly. Presets B and C sit within a dollar or two of the
-  paper's $1,000 and $1,268.
+  and writes `web_expected.json`; the browser solver matches every headline metric. Those
+  inputs are exported from the paper's canonical data by its `scripts/05_export_site_inputs.R`,
+  so the two cannot drift. Presets B and C reproduce the paper's Examples B and C exactly
+  ($1,001 and $1,270). Preset A reports $3,443 against the paper's $3,676 because the paper's
+  Example A adds a broad-science fee target that this tool omits by design.
 
 ## Caveats
 

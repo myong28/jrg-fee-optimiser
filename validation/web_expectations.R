@@ -6,7 +6,11 @@
 library(data.table)
 library(lpSolve)
 
-base <- fread("/Users/myong/My Drive/1. Documents/1. Education/3. Research/Uni fee setting/jrg-fee-explorer/validation/site_inputs_2026_statutory.csv")
+# Resolve the inputs file relative to this script so the repo can be moved.
+args <- commandArgs(trailingOnly = FALSE)
+script_arg <- grep("^--file=", args, value = TRUE)
+this_dir <- if (length(script_arg)) dirname(normalizePath(sub("^--file=", "", script_arg[1]))) else "."
+base <- fread(file.path(this_dir, "site_inputs_2026_statutory.csv"))
 setorder(base, id)
 base[, jrg_rev_pct := jrgRevPct]
 
